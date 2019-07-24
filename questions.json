@@ -1,0 +1,71 @@
+{
+  "aws_certified_cloud_practitioner_0": {
+    "question": "A company has an EC2 instance running, when suddenly the server was terminated. It's suspected that a junior developer may have terminated this instance by mistake. Which AWS service will help us determine who was responsible",
+    "options": [
+      "CloudTrail",
+      "Trusted Advisor",
+      "AWS Inspector",
+      "CloudWatch Logs"
+    ],
+    "answer": "CloudTrail",
+    "explanation": "You can browse EC2 events along with who initiated those events in CloudTrail. Any time you need to determine who did what, always think about CloudTrail and blame. Whenever you need to point the finger and blame somebody, CloudTrail is your tool. By default, CloudTrail is turned on. AWS Inspector is not the answer, AWS Inspector is used to create PDF reports of the security vulnerabilities of an EC2 instance. CloudWatch is not the answer, CloudWatch does generate logs, but it does not have information about who did what. Trusted Advisor is a very generic tool that makes suggestions across many services about security, cost optimization,  etc., it does not tell who did what."
+  },
+  "aws_certified_cloud_practitioner_1": {
+    "question": "A company has to hold onto digital files for accounting purposes for at least seven years. In the rare event they need to access those files in case of audit, they need to recover those files in a day or two. Which AWS service is the most cost effective solution for storing their digital files?",
+    "options": [
+      "Amazon S3 Glacier",
+      "AWS Storage Gateway",
+      "Amazon S3",
+      "Amazon EBS"
+    ],
+    "answer": "Amazon S3 Glacier",
+    "explanation": "AWS Storage Gateway is not the answer, in fact, it is the most expensive option here, because it is a tool of convenience, you want to use storage gateway when you are in a hybrid situation. It is for when you are on premise, and you are trying to extend your storage into the cloud. If you want to use your own local storage AND use AWS cloud storage, AWS Storage Gateway is the service for you. Sometimes people will drop the 'S3' in AWS S3 Glacier, but it is in fact a storage class of S3. Glacier is one of the most inexpensive solutions to storing your files, so long as you are okay with waiting at least an hour to get that file. EBS, which stands for Elastic Block Storage, can be thought of as a harddrive in the cloud. You can choose what kind of harddrive you want to spin up using EBS, and you could store files on that harddrive. Based on the type of EBS you choose, storing files could be more cost effective. For example, 'Cold HDD' EBS is the most cost effective EBS harddrive for storing files you do not plan on accessing very often. Glacier actually uses Cold HDD under the hood."
+  },
+  "aws_certified_cloud_practitioner_2": {
+    "question": "Which AWS service will help you visualize your day to day costs in AWS?",
+    "options": [
+      "AWS Cost Explorer",
+      "AWS TCO",
+      "AWS Budgets",
+      "AWS Trusted Advisor"
+    ],
+    "answer": "AWS Cost Explorer",
+    "explanation": "AWS Cost Explorer will tell you down to the number of cents how much you are spending on each service every day. AWS Cost Explorer will give you a good visual breakdown of all your costs. AWS Budgests is not the answer, however it is a good tool if you want a tool that prevents you from going over a predefined budget. AWS Trusted Advisor makes some general suggestions for how you could be saving money. AWS TCO is a glorified calculator that tells you the hidden costs of running your own datacenter and why you should move onto the cloud (AWS), but it doesn't actually give a breakdown of the costs of the services you are using."
+  },
+  "aws_certified_cloud_practitioner_3": {
+    "question": "",
+    "options": [],
+    "answer": "",
+    "explanation": ""
+  },
+  "aws_certified_cloud_practitioner_4": {
+    "question": "",
+    "options": [],
+    "answer": "",
+    "explanation": ""
+  },
+  "aws_certified_cloud_practitioner_5": {
+    "question": "",
+    "options": [],
+    "answer": "",
+    "explanation": ""
+  },
+  "aws_certified_cloud_practitioner_1": {
+    "question": "",
+    "options": [],
+    "answer": "",
+    "explanation": ""
+  },
+  "aws_certified_cloud_practitioner_1": {
+    "question": "",
+    "options": [],
+    "answer": "",
+    "explanation": ""
+  },
+  "aws_certified_cloud_practitioner_1": {
+    "question": "",
+    "options": [],
+    "answer": "",
+    "explanation": ""
+  }
+}
